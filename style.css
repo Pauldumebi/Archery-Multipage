@@ -20,6 +20,12 @@ li {
    background: rgba(27, 102, 9, 0.897);
    border: none;
    color: white;
+   cursor: pointer;
+   transform: scale(1);
+}
+#button:hover {
+   transform: scale(1.1);
+   transition: all 0.5s;
 }
 
 .header {
@@ -167,8 +173,7 @@ li {
  .About-info span {
     margin-left: 130px;
     margin-top: -80px;
-    color: #717171;
-    
+    color: #717171;   
  }
 
  .About-info p {
@@ -233,6 +238,7 @@ li {
  }
  #Read-more:hover{
    color: white;
+   border: none;
  }
  .About-our-club a:hover {
     background:rgba(27, 102, 9, 0.897);
@@ -330,11 +336,14 @@ li {
 
  .gallery img {
     width: 19rem;
-    margin: 10px 10px;
+    margin: 10px 14px;
     position: relative;
     animation: galleryPictures;
     animation-duration: 2s;
     animation-fill-mode: both;
+ }
+ .gallery img :first-child {
+    padding-left: 50px;
  }
 
  @keyframes galleryPictures {
